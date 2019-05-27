@@ -9,4 +9,10 @@ const MyStreakBlock = props => (
   </div>
 );
 
+MyStreakBlock.propTypes = {
+  streak: PropTypes.number.isRequired,
+  handleClickUpdate: PropTypes.func.isRequired,
+  handleClickReset: PropTypes.func.isRequired,
+}
+
 export default MyStreakBlock;
