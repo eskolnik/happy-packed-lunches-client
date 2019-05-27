@@ -34,7 +34,6 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^24.8.0",
-    "jest": "^24.8.0",
     "jest-dom": "^3.4.0",
     "react-testing-library": "^7.0.1"
   }
