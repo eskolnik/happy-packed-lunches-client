@@ -26,7 +26,7 @@ describe("MyStreakBlock", () => {
     const updateSpy = jest.fn();
     const { getByText } = setup({ streak: 1, handleClickUpdate: updateSpy });
 
-    const updateButton = getByText("Update");
+    const updateButton = getByText("Update", {exact: false});
     fireEvent.click(updateButton);
     expect(updateSpy).toHaveBeenCalled();
   });
@@ -35,7 +35,7 @@ describe("MyStreakBlock", () => {
     const resetSpy = jest.fn();
     const { getByText } = setup({ streak: 1, handleClickReset: resetSpy });
 
-    const resetButton = getByText("Reset");
+    const resetButton = getByText("Reset", {exact: false});
     fireEvent.click(resetButton);
     expect(resetSpy).toHaveBeenCalled();
   });
