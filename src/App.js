@@ -1,7 +1,5 @@
 import React from "react";
-// import logo from "./logo.svg";
-// import "./App.css";
-import MyStreakBlockContainer from './MyStreakBlockContainer';
+import StreakBlockContainer from './StreakBlockContainer';
 
 function App() {
   return (
@@ -9,7 +7,7 @@ function App() {
       <header className="App-header">
         <p>HAPPY PACKED LUNCHES</p>
       </header>
-      <MyStreakBlockContainer />
+      <StreakBlockContainer />
     </div>
   );
 }

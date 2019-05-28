@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "react-testing-library";
-import MyStreakBlock from "../MyStreakBlock";
+import StreakBlock from "../StreakBlock";
 
 const noop = () => {};
 const setup = ({
@@ -9,17 +9,17 @@ const setup = ({
   handleClickUpdate = noop
 }) =>
   render(
-    <MyStreakBlock
+    <StreakBlock
       streak={streak}
       handleClickReset={handleClickReset}
       handleClickUpdate={handleClickUpdate}
     />
   );
 
-describe("MyStreakBlock", () => {
+describe("StreakBlock", () => {
   it("Displays a streak counter", () => {
     const { getByText } = setup({ streak: 2 });
-    expect(getByText("My Streak: 2 Days")).toBeVisible();
+    expect(getByText("Current Streak: 2 Days")).toBeVisible();
   });
 
   it("Updates the streak", () => {

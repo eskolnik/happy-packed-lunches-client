@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import MyStreakBlock from "./MyStreakBlock";
+import StreakBlock from "./StreakBlock";
 import { fetchStreakData, postStreakUpdate, postStreakReset } from "./queries";
 
-class MyStreakBlockContainer extends Component {
+class StreakBlockContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -49,7 +49,7 @@ class MyStreakBlockContainer extends Component {
     return isFetchingData ? (
       <div>Hang on a sec</div>
     ) : (
-      <MyStreakBlock
+      <StreakBlock
         streak={streak}
         handleClickUpdate={this.handleClickUpdate}
         handleClickReset={this.handleClickReset}
@@ -58,4 +58,4 @@ class MyStreakBlockContainer extends Component {
   }
 }
 
-export default MyStreakBlockContainer;
+export default StreakBlockContainer;
